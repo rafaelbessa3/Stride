@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stride - Personalizador de Calçado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logotipo em pe.jpg" alt="Logotipo Stride" class="logo">
+        <h1>Personaliza o Teu Calçado</h1>
+    </header>
+    
+    <main>
+        <section id="customizer">
+            <canvas id="shoeCanvas" width="600" height="400"></canvas>
+
+            <div id="controls">
+                <div class="control-group">
+                    <h2>Corpo do Calçado</h2>
+                    <label for="colorBody">Cor:</label>
+                    <input type="color" id="colorBody" value="#ffffff">
+                    <label for="textureBody">Textura:</label>
+                    <select id="textureBody">
+                        <option value="">Sem textura</option>
+                        <option value="texture1.png">Textura 1</option>
+                        <option value="texture2.png">Textura 2</option>
+                    </select>
+                    <button id="applyBody">Aplicar</button>
+                </div>
+
+                <div class="control-group">
+                    <h2>Sola do Calçado</h2>
+                    <label for="colorSole">Cor:</label>
+                    <input type="color" id="colorSole" value="#000000">
+                    <label for="textureSole">Textura:</label>
+                    <select id="textureSole">
+                        <option value="">Sem textura</option>
+                        <option value="texture3.png">Textura 3</option>
+                        <option value="texture4.png">Textura 4</option>
+                    </select>
+                    <button id="applySole">Aplicar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="downloadSection">
+            <button id="downloadBtn">Descarregar Design</button>
+        </section>
+
+        <section id="contest">
+            <h2>Participa no Concurso</h2>
+            <form id="contestForm">
+                <canvas id="contestPreview" width="300" height="200"></canvas>
+                <label for="contestText">Descreve a tua ideia:</label>
+                <textarea id="contestText" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="contestResult" class="hidden">
+                <h3>Obrigado por participar!</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stride - Plataforma de Design de Calçado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

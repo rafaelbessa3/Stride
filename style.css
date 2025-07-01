@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdfdfd;
+    color: #111;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: #111;
+    color: #fff;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.logo {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#customizer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+canvas {
+    border: 2px solid #ccc;
+    background: white;
+    border-radius: 10px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 250px;
+}
+
+.control-group {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #333;
+}
+
+textarea {
+    width: 90%;
+    min-height: 80px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin: 10px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 40px;
+    color: #666;
+}
